@@ -2,6 +2,13 @@
   text-align: center;
 }
 
+.body
+{
+  align-items: center;
+  justify-content: center;
+  display:flex;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -36,3 +43,263 @@
     transform: rotate(360deg);
   }
 }
+
+.message1
+{
+  font-size: 12px;
+  font-weight:25;
+  border: 2px solid #dedede;
+  background-color: #55e4a8;
+  color:rgb(0, 0, 0);
+  border-radius: 12px;
+  padding: 10px;
+  margin: 10px 0;
+  max-width: 400px;
+  text-align: right;
+}
+
+.message1 img{
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-left: 1px;
+  border-radius: 50%;
+}
+
+.message {
+  font-size: 13px;
+  font-weight:30;
+  border: 2px solid #dedede;
+  background-color: #55e4a8;
+  color:rgb(0, 0, 0);
+  border-radius: 12px;
+  padding: 10px;
+  margin: 10px 0;
+  max-width: 360px;
+  right:0
+}
+.darker {
+  border-color: #ccc;
+  background-color: rgb(111, 25, 182);
+  color:white;
+}
+.message::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.message1::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.profilePic{
+  width: 100%;
+}
+.message img {
+  float: right;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 2px;
+  border-radius: 50%;
+}
+.message img.right {
+  float: right;
+  margin-left: 10px;
+  margin-right:0;
+  right:30px
+}
+.message1 img.left {
+  float: left;
+  margin-right: 10px;
+  margin-left:0;
+}
+.timeStampRight {
+  float: right;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+.timeStampLeft {
+  float: left;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+.send
+{
+  display: flex;
+  flex-direction: row;
+}
+
+.in{
+ /* background-color: #282c34;*/
+ background-color: transparent;
+}
+
+.im{
+  /* background-color: #282c34;*/
+  max-height: 20px;
+ }
+
+.do{
+  display: flex; flex-direction: row;
+}
+
+.but
+{
+ /* background-color: #4CAF50;*/
+ background-color: transparent;
+  border: none;
+  color: white;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 10px;
+  margin: 4px 2px;
+  border-radius: 12px;
+  width:80px;
+  height:30px;
+  
+}
+
+.inp
+{
+  border: none; /*removes the default css*/
+border-radius: 30px; /*your-border radius*/
+border-style:hidden;
+outline: none;
+}
+
+
+.Snowflake {
+  display: inline-block;
+  width: 0.1%;
+  color: #FFFAFA;
+  opacity: 0;
+  font-size: 120px;
+  margin: 0;
+  padding: 0;
+  animation: fall 16s linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    opacity: 0;
+  }
+  3% {
+    opacity: 0.9;
+  }
+
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translate(0, 97vh);
+    opacity: 0;
+  }
+}
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter{
+  color: #fff;
+  /*font-family: monospace;*/
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .10em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .11em; /* Adjust as needed */
+  animation: 
+    typing 3.7s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+ /* 50% { border-color: orange }*/
+}
+
+.zoom {
+  background-color:red;
+  transition: transform .2s;
+  margin: 0 auto;
+  height:35px;
+  text-align: center;
+  border:10px;
+  text-emphasis-style: bold;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+
+
+
